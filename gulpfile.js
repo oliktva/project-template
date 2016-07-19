@@ -72,7 +72,7 @@ gulp.task("symbols", function() {
 gulp.task('pug', function buildHTML() {
   return gulp.src('template/*.pug')
   .pipe(pug())
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("build"))
   .pipe(server.reload({stream: true}));
 });
 
